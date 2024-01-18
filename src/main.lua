@@ -11,12 +11,15 @@ import "CoreLibs/timer"
 
 import "components/ball"
 import "components/bat"
+import "components/brick"
+--- import "helpers/list"
 
 local pd <const> = playdate
 local gfx <const> = pd.graphics
 
 local ball <const> = Ball(60, 60)
 local bat <const> = Bat(60, 120)
+local brick <const> = Brick(120, 60, 3);
 
 ball:fixToBat(bat)
 
